@@ -1,19 +1,9 @@
-@import "./function/**";
-@import "./setting/**";
-@import "./base/**";
-@import "./mixin/**";
-@import "./plugin/**";
-@import "./module/**";
-@import "./page/**";
-
-
-.test {
-  padding: 10px;
-  margin: 0 auto;
-  color: #f00;
-  background-color: #fff;
-}
-
-body {
-  font-size: rem(60);
-}
+@import "foundation/_reset";
+@import "foundation/_breakpoints";
+@import "foundation/_setting";
+@import "foundation/_function";
+@import "foundation/_base";
+@import "layout/**";
+@import "object/component/**";
+@import "object/project/**";
+@import "object/utility/**";
