@@ -1,0 +1,28 @@
+.p-hero{
+    height: 100vh;
+    background: url(../images/pc/top-image.jpg) no-repeat center center / cover;
+    position: relative;
+    z-index: 1;
+
+    &__title{
+        position: absolute;
+        top: calc(50% + 30px);
+        left: calc(50% - 520px);
+        transform: translateY(-50%);
+        color: #fff;
+        font-size: rem(56);
+        font-weight: $fw-md;
+        text-shadow: 8px 0 8px $black, 0px 8px 8px $black, -8px 0 8px $black, 0px -8px 8px $black;
+        padding-bottom: 30px;
+        padding-right: 119px;
+        border-bottom: 1px solid #fff;
+
+        span{
+            display: block;
+            font-size: rem(36);
+            font-weight: $fw-md;
+            margin-top: 24px;
+            text-shadow: 10px 0 10px $black, 0px 10px 10px $black, -10px 0 10px $black, 0px -10px 10px $black;
+        }
+    }
+}
