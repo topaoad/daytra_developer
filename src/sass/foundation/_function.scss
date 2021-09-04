@@ -2,14 +2,6 @@
   @return $pixels / 16 * 1rem;
 }
 
-@import "../setting/_breakpoints";
-
-@mixin mq($mediaquery: md) {
-  @media #{map-get($mediaquerys, $mediaquery)} {
-    @content;
-  }
-}
-
 // 数値のみを取り出す
 @function strip-unit($number) {
   @if type-of($number) == "number" and not unitless($number) {

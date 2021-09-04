@@ -1,0 +1,26 @@
+//コンテンツ幅
+$inner: 1040px;
+
+//コンテンツ余白
+$padding-pc: 25px;
+$padding-sp: 20px;
+
+//色
+$main-color: #31452d;
+$accent-color: #b69b04;
+$black: #333333;
+$bg-color: #eeead0;
+
+//フォントファミリー
+@import url('https://fonts.googleapis.com/css2?family=Lora&family=Noto+Serif+JP:wght@400;500&display=swap');
+$jp-font: 'Noto Serif JP', serif;
+$en-font: 'Lora', serif;
+
+//フォントサイズ
+$lg-fsz: rem(32);
+$md-fsz: rem(24);
+$sm-fsz: rem(20);
+
+//フォントウェイト
+$fw-rg: 400;
+$fw-md: 500;

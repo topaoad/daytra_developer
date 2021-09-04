@@ -1,0 +1,47 @@
+.p-footer{
+    text-align: center;
+    color: #fff;
+    padding-top: 80px;
+
+    &__company-name{
+        padding-top: 20px;
+    }
+
+    &__address-inner{
+        padding-top: 15px;
+    }
+
+    &__address{
+        &:not(:first-child){
+            margin-left: 12px;
+        }
+    }
+
+    &__tel{
+        padding-top: 15px;
+    }
+
+    &__email{
+        padding-top: 15px;
+    }
+
+    &__list{
+        padding: 50px 0 120px 0;
+        justify-content: center;
+    }
+
+    &__link{
+        color: #fff;
+
+        &:not(:first-child){
+            &::after{
+                background-color: #fff;
+            }
+        }
+
+        
+        &:last-child{
+            padding: 0 0 0 33px;
+        }
+    }
+}

@@ -3,5 +3,11 @@ node_modules/
 twentytwentyone/
 package-lock.json/
 /package-lock.json/
+<<<<<<< HEAD
 /.DS_Store/
 .DS_Store
+=======
+.DS_Store/
+src/images/
+src/.DS_Store
+>>>>>>> origin/header+mv

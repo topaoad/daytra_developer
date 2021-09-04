@@ -1,10 +1,8 @@
-@import "inner";
-
 //ブレイクポイント
 $breakpoints: (
   sm: 600,
   md: 768,
-  lg: 1024,
+  lg: 1090,
   xl: 1440,
 );
 
@@ -16,3 +14,10 @@ $mediaquerys: (
   lg: "screen and (min-width: #{map-get($breakpoints,'lg')}px)",
   xl: "screen and (min-width: #{map-get($breakpoints,'xl')}px)",
 );
+
+
+@mixin mq($mediaquery: md) {
+    @media #{map-get($mediaquerys, $mediaquery)} {
+        @content;
+    }
+}

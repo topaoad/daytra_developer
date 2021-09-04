@@ -1,0 +1,53 @@
+.p-works{
+    padding-top: 150px;
+    position: relative;
+
+    &__bg{
+        position: absolute;
+        bottom: 80px;
+        right: 0;
+        z-index: 1;
+        width: 68.47222%;
+        height: 638px;
+        background-color: $bg-color;
+    }
+
+    &__grid{
+        padding-top: 48px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 64px 40px;
+        position: relative;
+        z-index: 2;
+    }
+
+    &__body{
+        padding: 23px 0 0 30px;
+        position: relative;
+
+        &::after{
+            content: "";
+            display: block;
+            position: absolute;
+            bottom: 0;
+            left: 22px;
+            width: 1px;
+            height: 144px;
+            background-color: $black;
+        }
+    }
+
+    &__item-title{
+        font-size: rem(24);
+    }
+
+    &__btn-inner{
+        margin-top: 16px;
+
+        &.-all{
+            margin-top: 70px;
+            text-align: center;
+        }
+    }
+
+}
