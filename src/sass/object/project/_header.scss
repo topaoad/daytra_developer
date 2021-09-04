@@ -1,0 +1,45 @@
+.p-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+
+    &__logo{
+        flex: 0 0 140px;
+        padding-right: 32px;
+    }
+
+    &__logo-link{
+        display: inline-block;
+    }
+
+    &__link{
+        display: inline-block;
+
+        span{
+            display: block;
+            text-align: center;
+            font-size: rem(12);
+            font-weight: $fw-rg;
+            color: $accent-color;
+            margin-top: 6px;
+            font-family: $en-font;
+        }
+    }
+
+    &__contact{
+        display: block;
+        padding: 23px 36px;
+        background-color: $main-color;
+        color: #fff;
+
+        span{
+            display: block;
+            text-align: center;
+            font-size: rem(12);
+            font-weight: $fw-rg;
+            color: $accent-color;
+            margin-top: 6px;
+        }
+    }
+}

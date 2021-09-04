@@ -1,0 +1,23 @@
+.c-nav{
+    display: flex;
+
+    &__link{
+        padding-right: 32px;
+        position: relative;
+
+        &:not(:first-child){
+            padding: 0 32px 0 33px;
+
+            &::after{
+                content: "";
+                display: block;
+                width: 1px;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                background-color: $black;
+            }
+        }
+    }
+}
