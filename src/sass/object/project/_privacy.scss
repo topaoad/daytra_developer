@@ -1,0 +1,25 @@
+.p-privacy{
+    width: 100%;
+    background-color: $black;
+    border-top: 1px solid #fff;
+
+    &__wrap{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: #fff;
+        padding: 16px 0;
+    }
+
+    &__link{
+        &:not(:first-child){
+            &::after{
+                background-color: #fff;
+            }
+        }
+    }
+
+    &__copyright{
+        font-size: rem(12);
+    }
+}

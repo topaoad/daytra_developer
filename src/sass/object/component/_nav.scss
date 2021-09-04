@@ -2,18 +2,22 @@
     display: flex;
 
     &__link{
-        padding: 0 32px 0 33px;
+        padding-right: 32px;
         position: relative;
 
-        &::after{
-            content: "";
-            display: block;
-            width: 1px;
-            height: 100%;
-            position: absolute;
-            top: 0;
-            left: 0;
-            background-color: $black;
+        &:not(:first-child){
+            padding: 0 32px 0 33px;
+
+            &::after{
+                content: "";
+                display: block;
+                width: 1px;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                background-color: $black;
+            }
         }
     }
 }

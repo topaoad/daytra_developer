@@ -1,0 +1,35 @@
+.p-news{
+    padding-top: 120px;
+
+    &__list{
+        padding-top: 68px;
+    }
+
+    &__item{
+        display: flex;
+
+        &:not(:first-child){
+            margin-top: 24px;
+        }
+    }
+
+    &__text{
+        display: inline-block;
+        padding: 20px 40px;
+        box-sizing: content-box;
+        line-height: 1.7;
+
+        &.-yellow{
+            color: $accent-color;
+        }
+
+        &:not(:first-child){
+            border-left: 1px solid #e5e5e5;
+        }
+    }
+
+    &__btn-inner{
+        margin-top: 35px;
+        text-align: center;
+    }
+}

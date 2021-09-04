@@ -9,7 +9,7 @@
         z-index: 1;
         width: 68.47222%;
         height: 638px;
-        background-color: #eeead0;
+        background-color: $bg-color;
     }
 
     &__grid{
@@ -48,12 +48,6 @@
             margin-top: 70px;
             text-align: center;
         }
-    }
-
-    &__btn{
-        display: inline-block;
-        padding: 16px 60px;
-        border: 1px solid $main-color;
     }
 
 }
