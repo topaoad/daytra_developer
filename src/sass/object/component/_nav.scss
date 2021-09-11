@@ -1,23 +1,47 @@
-.c-nav{
+.c-nav {
+
+  display: block;
+
+
+
+
+  &__link {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: rem(24) 0;
 
-    &__link{
-        padding-right: 32px;
-        position: relative;
+    @include mq("md") {
+      padding: 0 32px 0 0;
 
-        &:not(:first-child){
-            padding: 0 32px 0 33px;
+    &:not(:first-child) {
+      padding: 0 32px 0 33px;
 
-            &::after{
-                content: "";
-                display: block;
-                width: 1px;
-                height: 100%;
-                position: absolute;
-                top: 0;
-                left: 0;
-                background-color: $black;
-            }
-        }
+      &::after {
+        content: "";
+        display: block;
+        width: 1px;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: $black;
+      }
     }
+  }
+  }
+
+  &__menu {
+    display: none;
+
+    @include mq("md") {
+      display: flex;
+  }
+
+
+    transition: ease 0.5s;
+
+ 
+  }
 }

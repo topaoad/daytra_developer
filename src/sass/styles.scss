@@ -1,9 +1,12 @@
+// @import "foundation/**";⇐これをやると、なぜかコンパイルエラーとなる
 @import "foundation/_reset";
 @import "foundation/_breakpoints";
 @import "foundation/_setting";
+@import "foundation/_hidden";
 @import "foundation/_function";
 @import "foundation/_base";
 @import "layout/**";
 @import "object/component/**";
 @import "object/project/**";
 @import "object/utility/**";
+

@@ -1,68 +1,109 @@
-.p-concept{
+.p-concept {
+  padding-top: 79px;
+  @include mq("md") {
     padding-top: 120px;
+  }
 
-    &__title{
-        font-size: rem(32);
-        text-align: center;
+  &__title {
+    font-size: rem(32);
+    text-align: center;
 
-        span{
-            display: block;
-            font-size: rem(16);
-            color: $main-color;
-            padding-top: 8px;
-            position: relative;
+    span {
+      display: block;
+      font-size: rem(16);
+      color: $main-color;
+      padding-top: 8px;
+      position: relative;
 
-            &::after{
-                content: "";
-                position: absolute;
-                bottom: -16px;
-                left: 50%;
-                transform: translateX(-50%);
-                width: 64px;
-                height: 1px;
-                background-color: $accent-color;
-            }
-        }
-    }
-
-    &__inner{
-        padding-top: 48px;
-        position: relative;
-        width: 1440px;
-        max-width: 100%;
-        margin: auto;
-    }
-
-    &__img{
-        width: 77.7777%;
-        max-width: 1140px;
-        margin-left: auto;
-    }
-
-    &__textbox{
-        width: 640px;
-        max-width: 100%;
-        color: #fff;
-        background-color: $main-color;
-        padding: 64px 48px;
+      &::after {
+        content: "";
         position: absolute;
-        bottom: -29px;
-        left: 0;
+        bottom: -16px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 64px;
+        height: 1px;
+        background-color: $accent-color;
+      }
+    }
+  }
+
+  &__inner {
+    padding-top: 48px;
+    width: 1440px;
+    max-width: 100%;
+    margin: auto;
+    @include mq("md") {
+      position: relative;
+    }
+  }
+
+  &__img {
+    padding-top: 360/375 * 100%;
+    position: relative;
+
+    @include mq("md") {
+      width: 77.7777%;
+      max-width: 1140px;
+      margin-left: auto;
+      padding-top: 0;
+      position: static;
     }
 
-    &__sub-title{
-        font-size: rem(24);
-        line-height: (36 / 24);
-    }
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: 50% 50%;
 
-    &__text{
+      @include mq("md") {
+        position: static;
+      }
+    }
+  }
+
+  &__textbox {
+    width: 640px;
+    max-width: 100%;
+    color: #fff;
+    background-color: $main-color;
+    padding: rem(57) rem(20) rem(33) rem(20);
+
+    bottom: -29px;
+    left: 0;
+    @include mq("md") {
+      position: absolute;
+      padding: 64px 48px;
+    }
+  }
+
+  &__sub-title {
+    font-size: rem(20);
+    line-height: (20 / 20);
+    @include mq("md") {
+      font-size: rem(24);
+      line-height: (36 / 24);
+    }
+  }
+
+  &__text {
+      margin-top: rem(20);
+    font-size: rem(16);
+    line-height: (32 / 16);
+  
+    @include mq("md") {
+        margin-top: 0;
         line-height: (40 / 16);
         letter-spacing: 0.05em;
         margin-top: 10px;
-    }
+	}
+  }
 
-    &__btn-inner{
-        margin-top: 24px;
-        text-align: right;
-    }
+  &__btn-inner {
+    margin-top: 24px;
+    text-align: right;
+  }
 }

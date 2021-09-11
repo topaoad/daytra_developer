@@ -1,58 +1,107 @@
-.p-contact{
+.p-contact {
+  margin-top: 79px;
+  padding: 40px 0;
+  background-color: $bg-color;
+  @include mq("md") {
     margin-top: 120px;
     padding: 120px 0;
-    background-color: $bg-color;
+  }
 
-    &__items{
-        padding-top: 50px;
-        display: flex;
-        justify-content: center;
+  &__items {
+    padding-top: rem(8);
+    @include mq("md") {
+      padding-top: 50px;
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  &__item {
+    padding: rem(32) rem(16) rem(32) rem(10);
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+
+    &:not(:nth-child(n + 3)) {
+      border-bottom: rem(1) solid #333;
+    }
+    @include mq("md") {
+      padding: 25px 0;
+      display: flex;
+      justify-content: center;
+      &:not(:nth-child(n + 3)) {
+        border-bottom: none;
+      }
+      width: 26.923%;
+      flex-direction: column;
+      &:not(:first-child) {
+        border-left: 1px solid $black;
+      }
+    }
+  }
+
+  &__text {
+    @include mq("md") {
+      font-size: rem(20);
+
+    }
+  }
+  &__middle {
+    @include mq("md") {
+      margin-top: 16px;
+    }
+  }
+
+  &__bottom {
+    @include mq("md") {
+      margin-top: 20px;
+      position: relative;
+    }
+  }
+
+  &__btn {
+    display: inline-block;
+    padding: 15px 30px;
+    color: #fff;
+
+
+    &.u-btn-sp {
+      // display: block;
+      @include mq("md") {
+        display: none;
+      }
     }
 
-    &__item{
-        width: 26.923%;
-        padding: 25px 0;
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-
-        &:not(:first-child){
-            border-left: 1px solid $black;
-        }
+    &.-yellow {
+      background-color: $accent-color;
     }
 
-    &__middle{
-        margin-top: 16px;
+    &.-green {
+      background-color: $main-color;
     }
+  }
 
-    &__bottom{
-        margin-top: 20px;
+  &__tel {
+    font-size: rem(24);
+    color: $main-color;
+    font-family: $en-font;
+//     margin-top: rem(25);
+  }
+
+  &__open {
+    font-size: rem(12);
+    color: $main-color;
+    margin-top: 8px;
+    position: absolute;
+    // margin-right: rem(20);
+  
+     transform: translateX(-10px);
+
+    @include mq("md") {
+      position: static;
+      transform: none;
+
     }
-
-    &__btn{
-        display: inline-block;
-        padding: 15px 30px;
-        color: #fff;
-
-        &.-yellow{
-            background-color: $accent-color;
-        }
-
-        &.-green{
-            background-color: $main-color;
-        }
-    }
-
-    &__tel{
-        font-size: rem(24);
-        color: $main-color;
-        font-family: $en-font;
-    }
-
-    &__open{
-        font-size: rem(12);
-        color: $main-color;
-        margin-top: 8px;
-    }
+  }
 }

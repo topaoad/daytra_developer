@@ -51,4 +51,8 @@ a {
         opacity: 0.8;
         }
     }
+        //コピー用
+    @include mq("md") {
+	
+	}
 }

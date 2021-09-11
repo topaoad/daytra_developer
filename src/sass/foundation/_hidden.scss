@@ -1,0 +1,36 @@
+//デスクトップのみ表示
+.u-desktop {
+  display: none;
+  @include mq("lg") {
+    display: block;
+  }
+}
+
+//モバイルのみ表示タブレット含む1024px以上対応
+.u-mobile {
+  @include mq("lg") {
+    display: none;
+  }
+}
+
+//タブレット以下のみ表示
+//旧u-tablet
+.u-sp {
+  display: block;
+  @include mq("md") {
+    display: none;
+  }
+}
+
+
+// ***********ブレイクポイントmd対応***********
+
+//タブレット以下は表示せず、それ以上のみ表示
+//旧o-tablet
+.u-tablet {
+  display: none;
+  @include mq("md") {
+    display: block;
+  }
+}
+
