@@ -53,9 +53,7 @@
       color: $accent-color;
     }
 
-    &:not(:first-child) {
-      border-left: 1px solid #e5e5e5;
-    }
+ 
 
     &:first-child {
       font-size: rem(14);
@@ -71,6 +69,10 @@
       box-sizing: content-box;
       line-height: 1.7;
 
+      &:not(:first-child) {
+        border-left: 1px solid #e5e5e5;
+      }
+      
       &:first-child {
         font-size: rem(16);
         margin-top: 0;
